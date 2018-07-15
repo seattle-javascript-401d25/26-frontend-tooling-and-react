@@ -48,7 +48,7 @@ Create the following component
 * Write a method called `getIntersection` that finds the common values between your two lists and render that as a comma-separated string that is listed in the cowsay bubble. If there are no common values, the cow's text should remain the defaulted `this.state.message`.
 * It is recommend that this method follow this signature:
 ```
-getIntersection(firstList, secondList) => comma-separated string of common values between lists
+getIntersection(firstList, secondList) => comma-separated string of common values between lists OR the default message
 ```
 
 ####  Documentation  
