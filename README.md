@@ -27,6 +27,7 @@ Your lab directory must include:
 * **package-lock.json** -- with the package.json lockfile
 * **webpack.common.js** -- per lecture code
 * **webpack.dev.js** -- per lecture code
+* **webpack.prod.js** -- per lecture code
 * **src/** -- conating the frontend code
 * **src/main.js** -- containing the entire app
 * **src/style** -- containing your sass
