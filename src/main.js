@@ -4,6 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Cowsay from 'react-cowsay';
 import Header from './components/header/header';
+import InputText from './components/textInput/textInput';
+
 import './style/main.scss';
 
 class App extends React.Component {
@@ -18,10 +20,10 @@ class App extends React.Component {
       cowsays: 'This is the default message on page load.',
     };
   }
-
+  
   handleInputChange = (event) => {
     const { value, name } = event.target;
-
+    
     this.setState({ [name]: value });
   }
 
@@ -44,26 +46,14 @@ class App extends React.Component {
       };
     });
   }
-
+  
   render() {
     return (
       <div className="cowsay">
-        <Header></Header>
+        <Header />
         <form onSubmit={ this.handleSubmit }>
-          <label htmlFor="firstEntry">Enter some text</label>
-          <input
-            type="text"
-            name="firstEntry"
-            onChange={ this.handleInputChange }
-            value={ this.state.firstEntry }
-            />
-          <label htmlFor="secondEntry">Enter some more text</label>
-          <input
-            type="text"
-            name="secondEntry"
-            onChange={ this.handleInputChange }
-            value={ this.state.secondEntry }
-            />
+          <InputText inputName="firstEntry" handleInputChange={this.handleInputChange} key="inboxone"/>
+          <InputText inputName="secondEntry" handleInputChange={this.handleInputChange}key="inboxtwo"/>
           <button type="submit">Update lists</button>
         </form>
         <ul>
