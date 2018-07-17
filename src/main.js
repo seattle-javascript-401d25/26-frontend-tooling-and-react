@@ -98,13 +98,10 @@ class App extends React.Component {
     const filteredItems = secondItems.filter(string => map[string]);
 
     if (filteredItems.length) {
-      this.message = filteredItems.join(', ');
-      console.log(this.message);
-      return this.message;
+      this.setState({ message: filteredItems.join(', ') });
+      console.log(this.message.value);
     }
-    if (!filteredItems.length) {
-      return this.message;
-    }
+    return undefined;
   }
 
   render() {
