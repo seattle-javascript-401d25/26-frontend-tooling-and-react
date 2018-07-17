@@ -1,0 +1,15 @@
+body {
+  background-color: #333;
+  color: white;
+
+  .cowsay {
+
+    label, button {
+      display: block;
+    }
+
+    ul {
+      display: inline-block;
+    }
+  }
+}
