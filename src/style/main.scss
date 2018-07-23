@@ -1,15 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Gaegu);
 
-$gaegu: 'Gaegu';
-
 body {
-  background-color: #ffc1c1;
-  font-family: $gaegu;
-  color: #5b5bc8;
+  background-color: #a6dbeb;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: black;
 
   .cowsay {
+    text-align: center;
+    
+    button {
+      background-color: white;
+      color: rgb(36, 36, 36);
+      display: block;
+      font-size: 14px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 2px solid rgb(81, 122, 141);
+      padding: 5px;
+    }
 
-    label, button {
+    label {
       display: block;
     }
 
